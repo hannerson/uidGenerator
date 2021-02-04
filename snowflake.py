@@ -39,7 +39,7 @@ class snowflakeIds(object):
         return diffTime + self.workerIdNum + self.curSeq
 
     def nextIdDate(self):
-        return self.transferToDate(self.nextId)
+        return self.transferToDate(self.nextId())
 
     def transferToDate(self, sfId):
         timeMilisec = (sfId >> (self.workerBits + self.seqBits)) + self.beginTime
