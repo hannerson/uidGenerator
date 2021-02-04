@@ -4,3 +4,4 @@
 	b.使用双缓存策略，异步加载下一个号段时，不影响前一个号段的使用。
 2 snowflake.py 实现了snowflake算法，基于时钟生成ID，但是ID比较长，趋势递增。
 3 server.py和asyncserver.py基于tornado实现了http服务
+4 getid_grpc_server.py和getid_client.py分别是基于grpc的rpc调用样例
